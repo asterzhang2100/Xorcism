@@ -1,0 +1,13 @@
+{
+  "name": "xorcism",
+  "version": "0.3.0",
+  "private": true,
+  "description": "A user-initiated Chrome extension for selecting and blocking a finite set of visible X accounts.",
+  "scripts": {
+    "test": "node --test",
+    "check": "node --test && node scripts/check-project.cjs"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

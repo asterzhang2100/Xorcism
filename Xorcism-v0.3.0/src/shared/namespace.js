@@ -1,0 +1,3 @@
+(() => {
+  globalThis.Xorcism = globalThis.Xorcism || {};
+})();

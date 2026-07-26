@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Xorcism</title>
+    <link rel="stylesheet" href="popup.css">
+  </head>
+  <body>
+    <main class="app">
+      <header class="hero">
+        <div class="brand-mark" aria-hidden="true"><img src="../../assets/icons/icon-48.png" alt=""></div>
+        <div>
+          <h1>Xorcism</h1>
+          <p>Remove repeated noise from your attention.</p>
+        </div>
+      </header>
+
+      <section id="unsupported" class="notice notice-error" hidden>
+        Open X in the active tab to use Xorcism.
+      </section>
+
+      <section id="workspace" hidden>
+        <div class="status-card">
+          <div>
+            <span class="eyebrow">Selection</span>
+            <strong id="selection-status">Inactive</strong>
+          </div>
+          <span id="selected-count" class="count">0</span>
+        </div>
+
+        <div class="button-grid">
+          <button id="select-button" class="button button-primary">
+            Select accounts
+          </button>
+          <button id="done-button" class="button" disabled>
+            Finish selection
+          </button>
+        </div>
+
+        <section class="queue-section">
+          <div class="section-heading">
+            <h2>Queue</h2>
+            <button id="clear-button" class="text-button" disabled>
+              Clear
+            </button>
+          </div>
+          <div id="empty-state" class="empty-state">
+            No accounts selected.
+          </div>
+          <ul id="handle-list" class="handle-list" aria-label="Selected accounts"></ul>
+        </section>
+
+        <section id="run-section" class="run-section">
+          <div class="progress-row">
+            <span id="run-label">Ready</span>
+            <span id="run-progress">0 / 0</span>
+          </div>
+          <div class="progress-track" aria-hidden="true">
+            <div id="progress-bar" class="progress-bar"></div>
+          </div>
+          <p id="run-summary" class="run-summary">
+            Review the queue before starting.
+          </p>
+        </section>
+
+        <button id="block-button" class="button button-danger button-full" disabled>
+          Block selected
+        </button>
+        <p class="action-note">
+          Starts immediately. X confirms each block.
+        </p>
+        <button id="stop-button" class="button button-full" hidden>
+          Stop after current account
+        </button>
+
+        <details id="error-details" class="error-details" hidden>
+          <summary>Skipped and failed accounts</summary>
+          <ul id="error-list"></ul>
+        </details>
+      </section>
+
+      <footer>
+        Drag-select. Finite queue. No telemetry.
+      </footer>
+    </main>
+
+    <script type="module" src="popup.js"></script>
+  </body>
+</html>
