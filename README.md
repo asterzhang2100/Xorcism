@@ -50,7 +50,7 @@ Xorcism 是独立项目，与 X Corp. 没有隶属、合作、认可或赞助关
 3. 访问 `chrome://extensions`。
 4. 开启右上角的 **Developer mode / 开发者模式**。
 5. 点击 **Load unpacked / 加载已解压的扩展程序**。
-6. 选择仓库根目录，也就是包含 `manifest.json` 的文件夹。
+6. 选择解压后的 `Xorcism-v0.3.0 `文件夹，也就是直接包含 `manifest.json `的文件夹。
 7. 将 Xorcism 固定到浏览器工具栏。
 8. 如果安装前已经打开了 X 页面，请重新加载该标签页。
 
